@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: lizhen-activiti-web
+  profiles:
+    active: local
+server:
+  context-path: /activiti

@@ -1,0 +1,13 @@
+spring:
+  #dubbo config
+  dubbo:
+    application:
+      name: lizhen-activiti-web
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 26008
+    scan: com.lizhen
+server:
+  port: 8288

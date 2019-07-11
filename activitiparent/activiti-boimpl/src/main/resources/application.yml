@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: lizhen-activiti
+  profiles:
+    active: local

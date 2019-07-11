@@ -1,0 +1,32 @@
+datasource:
+  profile:
+    path: c:\\datasource-sit.yml
+accountFilePath: /data/config/demo/activiti/datasource-demo.yml
+spring:
+  #datasource config
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/spring-boot-activiti?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    username: root
+#    password: root
+#  jpa:
+#    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/activiti?characterEncoding=utf8&allowMultiQueries=true&useServerPrepStmts=true&cachePrepStmts=true&prepStmtCacheSize=250&prepStmtCacheSqlLimit=2018
+    username: root
+    password: 123456
+    jpa:
+      show-sql: true
+  #dubbo config
+  dubbo:
+    application:
+      name: lizhen-activiti-serviceimpl
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 26009
+    scan: com.lizhen
+server:
+  port: 8299

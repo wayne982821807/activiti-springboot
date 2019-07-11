@@ -1,0 +1,17 @@
+datasource:
+  profile:
+    path: /data/config/prod/activiti/datasource-prod.yml
+accountFilePath: /data/config/prod/activiti/datasource-prod.yml
+spring:
+  #dubbo config
+  dubbo:
+    application:
+      name: lizhen-activiti-serviceimpl
+    registry:
+      address: zookeeper://192.168.102.215:20181?backup=192.168.102.216:20181
+    protocol:
+      name: dubbo
+      port: 26009
+    scan: com.lizhen
+server:
+  port: 8299

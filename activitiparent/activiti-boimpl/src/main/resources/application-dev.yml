@@ -1,0 +1,21 @@
+spring:
+  #datasource config
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.96.14.212:33306/activiti?characterEncoding=utf8&allowMultiQueries=true&useServerPrepStmts=true&cachePrepStmts=true&prepStmtCacheSize=250&prepStmtCacheSqlLimit=2018
+    username: super
+    password: insit@2008
+  jpa:
+    show-sql: true
+  #dubbo config
+  dubbo:
+    application:
+      name: lizhen-activiti-serviceimpl
+    registry:
+      address: zookeeper://s01.dev.simu800.com:20181
+    protocol:
+      name: dubbo
+      port: 26009
+    scan: com.lizhen
+server:
+  port: 8299

@@ -1,0 +1,11 @@
+spring:
+  #dubbo config
+  dubbo:
+    registry:
+      address: zookeeper://192.168.102.215:20181?backup=192.168.102.216:20181
+    protocol:
+      name: dubbo
+      port: 26008
+    scan: com.lizhen
+server:
+  port: 8288
